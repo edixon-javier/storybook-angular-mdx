@@ -1,0 +1,353 @@
+import Motif2 from "../images/Motif2.svg";
+import Motif3 from "../images/Motif3.svg";
+import Motif5 from "../images/Motif5.svg";
+import Motif6 from "../images/Motif6.svg";
+import circle from "../images/start_circle.svg";
+import group1 from "../images/group1.svg";
+import group2 from "../images/group2.svg";
+import group3 from "../images/group3.svg";
+
+export const RightArrow = (targetId) => {
+  const el = document.querySelector(targetId);
+  const el2 = document.querySelector('#core-values');
+  el2.classList.add('nueva-clase');
+  window.scrollTo({ top: el.offsetTop, behavior: 'smooth' });
+}
+
+<div className="header" id="header">
+    <div className="title" onClick={()=> RightArrow()}>Foundations</div>
+    <div className="box">
+        <img src={Motif2} alt="Motif2" />
+        <img src={Motif3} alt="Motif3" />
+        <img src={Motif5} alt="Motif5" />
+        <img src={Motif6} alt="Motif6" />
+    </div>
+</div>
+
+<div className="content">
+    <div className="total-content">
+        <div className="sub-title">
+            <span>Empathy is our north star.</span>
+            <span>
+        We speak to a diverse customer base, so our goal is to create content
+        that’s brief, useful, and accessible.
+      </span>
+        </div>
+        <div className="content-dividier" id="our-core-values">
+            <div className="dividier"></div>
+            <div className="dividier-two"></div>
+        </div>
+        <div className="title-content" >Our core values</div>
+        <span className="span-content-sub">
+      TIAA’s Content Design System (CDS) provides consistent, clear and
+      professional written communication. The CDS serves as a trusted reference
+      tool for content strategists ensuring that our content maintains a unified
+      voice and effectively communicates TIAA’s identity and message by
+      observing the following:
+    </span>
+
+        <div className="content-list">
+            <div className="list">
+                <div className="icon">
+                    <img src={circle} alt="circle" />
+                    <span>Clarity</span>
+                </div>
+                <div className="text">
+                    <span className="span-content">
+            By providing guidelines on grammar, usage, and formatting. Consistent language and structure reduce ambiguity and improve understanding.
+          </span>
+                </div>
+            </div>
+
+            <div className="list">
+                <div className="icon">
+                    <img src={circle} alt="circle" />
+                    <span>Brand identity</span>
+                </div>
+                <div className="text">
+                    <span className="span-content">
+            Verbal brand is more than the sum of usage, punctuation, and grammar. The CDS is the single source of truth for our brand's voice, tone, and identity across all TIAA channels.
+          </span>
+                </div>
+            </div>
+
+            <div className="list">
+                <div className="icon">
+                    <img src={circle} alt="circle" />
+                    <span>Efficiency</span>
+                </div>
+                <div className="text">
+                    <span className="span-content">
+            The CDS serves as a handy default for resolving grammatical, syntactical and usage uncertainties about content standards.
+          </span>
+                </div>
+            </div>
+
+            <div className="list">
+                <div className="icon">
+                    <img src={circle} alt="circle" />
+                    <span>Professionalism</span>
+                </div>
+                <div className="text">
+                    <span className="span-content">
+            Adhering to a style guide demonstrates professionalism and attention to detail. It ensures that written materials meet high-quality standards, enhancing the credibility of the content and the organization.
+          </span>
+                </div>
+            </div>
+        </div>
+
+        <div className="content-dividier">
+            <div className="dividier"></div>
+            <div className="dividier-two"></div>
+        </div>
+        <div className="title-content-footer" id="principles">Principles</div>
+
+        <div className="content-footer">
+            <div className="footer">
+                <div className="dividier-vertical"></div>
+                <div className="other-content">
+                    <div className="content-img">
+                        <img src={group1} alt="group1" />
+                    </div>
+                    <span className="firts-span">Embrace mobile-first language design</span>
+                    <span className="second-span">Shorter copy works best on mobile screens. Keep word-count low and use concise language.</span>
+                </div>
+            </div>
+
+            <div className="footer">
+                <div className="dividier-vertical"></div>
+                <div className="other-content">
+                    <div className="content-img">
+                        <img src={group2} alt="group2" />
+                    </div>
+                    <span className="firts-span">Commit to platform agnosticism</span>
+                    <span className="second-span">Make sure your copy makes sense wherever a customer sees it.</span>
+                </div>
+            </div>
+
+            <div className="footer">
+                <div className="dividier-vertical"></div>
+                <div className="other-content">
+                    <div className="content-img">
+                        <img src={group3} alt="group3" />
+                    </div>
+                    <span className="firts-span">Aim for clarity and scannability</span>
+                    <span className="second-span">Readers tend to scan text. Make sure they can grasp the essence of a screen at a glance.</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div className="navigator-container">
+        <ul className="navigator">
+            <span onClick={()=> {
+              const el = document.querySelector('#header');;
+              window.scrollTo({ top: el.offsetTop, behavior: 'smooth' });
+              }}>On this page</span>
+
+             <li onClick={() => RightArrow('#our-core-values')} id="core-values">Our core values</li>
+
+                <li onClick={() => RightArrow('#principles')} id="core-values2">Principles</li>
+        </ul>
+
+    </div>
+</div>
+
+
+<style>{`
+.nueva-clase {
+    color: #305AF3;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: #F5F5F0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.title {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 115%;
+    letter-spacing: 1px;
+    color: #041459;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    margin-left: 64px;
+}
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.box img {
+    width: 100%;
+    height: 100%;
+}
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding-top: 64px;
+}
+.sub-title {
+    padding-bottom: 80px;
+    span:nth-child(1),
+    span:nth-child(2) {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  span:nth-child(1) {
+    color: #00A38D;
+  }
+  span:nth-child(2) {
+    color: #041459;
+  }
+}
+.navigator-container{
+    display: grid;
+    height: fit-content;
+    justify-content: end;
+}
+.navigator {
+    list-style: none;
+    border-radius: 8px;
+    border: 1px solid #CCC;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 0;
+    width: max-content;
+    span, li{
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+      cursor: pointer;
+    }
+    span:first-child{
+      color: #8B8B8B;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 130%;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+}
+.total-content,
+.content-list,
+.other-content {
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    display: flex;
+}
+.content-list{
+    padding-bottom: 80px;
+    gap: 15px;
+}
+.other-content {
+  gap: 15px;
+}
+.content-dividier {
+    display: flex;
+    padding-bottom: 36px;
+  .dividier{
+    border: 1px solid #CCC;
+    width: 36px;
+    height: 8px;
+    background-color: #00A38D;
+  }
+  .dividier-two{
+    border: 1px solid #CCC;
+    width: 18px;
+    height: 8px;
+    background-color: #8AD5CB;
+  }
+}
+.title-content,
+.span-content,
+.firts-span,
+.second-span,
+.title-content-footer {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 115%;
+    letter-spacing: 1px;
+    color: #041459;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.title-content-footer{
+    padding-bottom: 32px;
+}
+.firts-span {
+    font-size: 20px;
+}
+.span-content,
+.second-span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+}
+.span-content-sub{
+    color: #041459;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    padding-bottom: 32px;
+}
+.list {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.list .icon {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-left: 16px;
+    background-color: #EAF1FE;
+    border-radius: 8px 0px 0px 8px;
+}
+.list .text {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: #F5F5F0;
+    border-radius: 0px 8px 8px 0px;
+}
+.dividier-vertical {
+    border-left: 1px solid #CCC;
+    height: 100%;
+    padding-left: 15px;
+}
+.content-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C3DAFF;
+    height: 160px;
+    width: 220px;
+}
+.content-footer {
+    display: flex;
+    gap: 15px;
+}
+`}</style>
+

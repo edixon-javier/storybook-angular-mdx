@@ -1,0 +1,982 @@
+import Motif2 from "../images/Motif2.svg";
+import Motif3 from "../images/Motif3.svg";
+import Motif5 from "../images/Motif5.svg";
+import Motif6 from "../images/Motif6.svg";
+import close_circle_x from "../images/close_circle_x.svg";
+import check_circle from "../images/check_circle.svg";
+import close from "../images/close.svg";
+import check from "../images/check.svg";
+
+<div className="header">
+    <div className="title">Grammar & style</div>
+    <div className="box">
+        <img src={Motif2} alt="Motif2" />
+        <img src={Motif3} alt="Motif3" />
+        <img src={Motif5} alt="Motif5" />
+        <img src={Motif6} alt="Motif6" />
+    </div>
+</div>
+
+<div className="content">
+
+    <div className="general-content">
+
+        <div className="sub-title">
+            <h1>Plain language</h1>
+            <p>
+                When writing UI copy for our TIAA clients, try to keep it at an 8th grade reading level. Always avoid technical and financial jargon, where possible.
+            </p>
+            <p>
+                If you find yourself in a situation where financial jargon is necessary (for legal or regulatory purposes), use a tooltip or other explanatory component to educate the customer in terms they’ll understand.
+            </p>
+        </div>
+
+        <div className="content-styling">
+            <div className="content-dividier">
+                <div className="dividier"></div>
+                <div className="dividier-two"></div>
+            </div>
+
+            <div className="styling">
+                <h1>Text styling</h1>
+                <h3>Formatting</h3>
+                <div>
+                    <img src={check_circle} alt="check_circle" />
+                    <span>Use boldface to emphasize navigation labels and CTAs in instructional content.</span>
+                </div>
+                <div>
+                    <img src={close_circle_x} alt="close_circle_x" />
+                    <span>Do not italicize text for emphasis.</span>
+                </div>
+                <div>
+                    <img src={check_circle} alt="check_circle" />
+                    <span>Underline text should only be used for links.</span>
+                </div>
+            </div>
+
+            <div className="dividier-line"></div>
+
+            <div className="capitalization">
+                <h3>Capitalization</h3>
+
+                <div className="content-capitalization">
+                    <div className="capitalization-left">
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Use sentence case for all page titles, page headers, table content, table headers, tabs, buttons and links</span>
+                        </div>
+                        <div>
+                            <img src={close_circle_x} alt="close_circle_x" />
+                            <span>Capitalize proper nouns.</span>
+                        </div>
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Avoid writing in all caps.</span>
+                        </div>
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>When a hyphenated word is capitalized, all segments of the word should be capitalized.</span>
+                        </div>
+                    </div>
+
+                    <div className="capitalization-right">
+                        <h4>Example</h4>
+                        <div className="box-do">
+                            <div className="content-do">
+                                <div className="do">
+                                    <img src={check} alt="check" />
+                                    <span>Do</span>
+                                </div>
+                                <span className="do-span"><span>Fixed-Income </span>Investments as part of your retirement plan</span>
+                            </div>
+
+                            <div className="divider-vertical"></div>
+
+                            <div className="content-dont">
+                                <div className="dont">
+                                    <img src={close} alt="close" />
+                                    <span>Don’t</span>
+                                </div>
+                                <span className="do-span"> <span>Fixed-Income </span>Investments as part of your retirement plan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div className="content-styling">
+            <div className="content-dividier">
+                <div className="dividier"></div>
+                <div className="dividier-two"></div>
+            </div>
+
+            <div className="styling">
+                <h1>Number formatting</h1>
+            </div>
+
+            <div className="content-capitalization">
+                <div className="capitalization-left">
+                    <div>
+                        <span>Numbers are easier to scan than words. So, in running copy, write the numbers (1, 2, 3...), not words for numbers (one, two three...).</span>
+                    </div>
+                    <div>
+                        <span>When using numbers to describe order or position, write the words “first” through “ninth”only. Use numerals for 10th and beyond.</span>
+                    </div>
+                </div>
+
+                <div className="capitalization-right">
+                    <h4>Example</h4>
+                    <div className="box-do">
+                        <div className="content-do">
+                            <div className="do">
+                                <img src={check} alt="check" />
+                                <span>Do</span>
+                            </div>
+                            <span className="do-span">Get personalized investment advice in <span>5 minutes</span> or less</span>
+                        </div>
+
+                        <div className="divider-vertical"></div>
+
+                        <div className="content-dont">
+                            <div className="dont">
+                                <img src={close} alt="close" />
+                                <span>Don’t</span>
+                            </div>
+                            <span className="do-span">Get personalized investment advice in <span>five minutes</span> or less</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="dividier-line"></div>
+
+            <div className="capitalization">
+                <h3>Performance periods</h3>
+
+                <div className="content-capitalization">
+                    <div className="capitalization-left">
+                        <div>
+                            <span>When referring to industry standard performance periods, use numerals.</span>
+                        </div>
+                    </div>
+
+                    <div className="capitalization-right">
+                        <h4>Example</h4>
+                        <div className="box-do">
+                            <div className="content-do">
+                                <div className="do">
+                                    <img src={check} alt="check" />
+                                    <span>Do</span>
+                                </div>
+                                <span className="do-span">We provide CREF Stock account performance for the <span>1-, 5- and 10-year</span> periods</span>
+                            </div>
+
+                            <div className="divider-vertical"></div>
+
+                            <div className="content-dont">
+                                <div className="dont">
+                                    <img src={close} alt="close" />
+                                    <span>Don’t</span>
+                                </div>
+                                <span className="do-span">We provide CREF Stock account performance for the one, <span>five and 10-year</span> periods</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="dividier-line"></div>
+
+
+            <div className="capitalization">
+                <h3>Phone numbers</h3>
+
+                <div className="content-capitalization">
+                    <div className="capitalization-left">
+                        <span>The correct style for telephone numbers is:</span>
+                        <div className="phone-number">
+                            800-842-2252
+                        </div>
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Use dashes to separate digits.</span>
+                        </div>
+                        <div>
+                            <img src={close_circle_x} alt="close_circle_x" />
+                            <span>Do not use parentheses.</span>
+                        </div>
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Always display in boldface.</span>
+                        </div>
+
+
+                        <h4>Extensions</h4>
+                        <span>The correct style for telephone numbers with an extension is: </span>
+                        <div className="phone-number">
+                            800-TIAA-CREF (800-842-2273)
+                        </div>
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Add a comma after the main number, followed by “ext.”</span>
+                        </div>
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Use a dash after the second digit of the extension number.</span>
+                        </div>
+
+
+                        <h4>Vanity phone numbers</h4>
+                        <span>The correct style for vanity phone numbers is: </span>
+                        <div className="phone-number">
+                            800-TIAA-CREF (800-842-2273)
+                        </div>
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Follow the letter version with the all-number version in parentheses.</span>
+                        </div>
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Use a dash after the second digit of the extension number.</span>
+                        </div>
+
+                    </div>
+
+
+                    <div className="capitalization-right-2">
+                        <h4>Example</h4>
+
+                        <div className="box-do">
+                            <div className="content-do">
+                                <div className="do">
+                                    <img src={check} alt="check" />
+                                    <span>Do</span>
+                                </div>
+                                <span className="do-span">If your statement is not available, call <span>800-842-2252 </span> weekdays, 8 a.m - 10 p.m. (ET)</span>
+                            </div>
+
+                            <div className="divider-vertical"></div>
+
+                            <div className="content-dont">
+                                <div className="dont">
+                                    <img src={close} alt="close" />
+                                    <span>Don’t</span>
+                                </div>
+                                <span className="do-span">If your statement is not available, call <span> (800) 842-225</span> weekdays, 8 a.m - 10 p.m. (ET)</span>
+                            </div>
+                        </div>
+
+                        <div className="box-do">
+                            <div className="content-do">
+                                <div className="do">
+                                    <img src={check} alt="check" />
+                                    <span>Do</span>
+                                </div>
+                                <span className="do-span">To speak with a wealth advisor, call <span>800-842-2252,</span> ext.<span>23-1234</span></span>
+                            </div>
+
+                            <div className="divider-vertical"></div>
+
+                            <div className="content-dont">
+                                <div className="dont">
+                                    <img src={close} alt="close" />
+                                    <span>Don’t</span>
+                                </div>
+                                <span className="do-span">To speak with a wealth advisor, call <span>800-842-2252,</span> extension <span>231234</span></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="dividier-line"></div>
+
+
+
+            <div className="capitalization">
+                <h3>Percentages</h3>
+
+                <div className="content-capitalization">
+                    <div className="capitalization-left">
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>When providing instruction, spell out “percent”</span>
+                        </div>
+                        <div>
+                            <img src={close_circle_x} alt="close_circle_x" />
+                            <span>When identifying numeric values, use the “%” symbol</span>
+                        </div>
+                    </div>
+
+                    <div className="capitalization-right">
+                        <h4>Example</h4>
+                        <div className="box-do">
+                            <div className="content-do">
+                                <div className="do">
+                                    <img src={check} alt="check" />
+                                    <span>Do</span>
+                                </div>
+                                <span className="do-span"><span>percentage</span>Enter a <span>percentage</span> for each investment until you reach <span>100%.</span></span>
+                            </div>
+
+                            <div className="divider-vertical"></div>
+
+                            <div className="content-dont">
+                                <div className="dont">
+                                    <img src={close} alt="close" />
+                                    <span>Don’t</span>
+                                </div>
+                                <span className="do-span">Enter a % for each investment until you reach 100%. Enter a percentage for each investment until you reach <span>100 percent.</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="dividier-line"></div>
+
+            <div className="capitalization">
+                <h3>Currency</h3>
+
+                <div className="content-capitalization">
+                    <div className="capitalization-left">
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Always show the dollar sign ($) before the dollar amount with no space in between.</span>
+                        </div>
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>When showing whole dollar amounts, only display a decimal if the amounts are presented in a list or other stacked format where dollar amounts vary.</span>
+                        </div>
+                    </div>
+
+
+                    <div className="capitalization-right-2">
+                        <h4>Example</h4>
+
+                        <div className="box-do">
+                            <div className="content-do">
+                                <div className="do">
+                                    <img src={check} alt="check" />
+                                    <span>Do</span>
+                                </div>
+                                <span className="do-span"><span>$11,000</span></span>
+                            </div>
+
+                            <div className="divider-vertical"></div>
+
+                            <div className="content-dont">
+                                <div className="dont">
+                                    <img src={close} alt="close" />
+                                    <span>Don’t</span>
+                                </div>
+                                <span className="do-span">$11,000$ $11,000</span>
+                            </div>
+                        </div>
+
+                        <div className="box-do">
+                            <div className="content-do">
+                                <div className="do">
+                                    <img src={check} alt="check" />
+                                    <span>Do</span>
+                                </div>
+                                <span className="do-span">Total balance:<span> $107,050</span> Balance available to allocate:<span> $94,030.17.</span></span>
+                            </div>
+
+                            <div className="divider-vertical"></div>
+
+                            <div className="content-dont">
+                                <div className="dont">
+                                    <img src={close} alt="close" />
+                                    <span>Don’t</span>
+                                </div>
+                                <span className="do-span">Total balance: <span>$107,050.00 </span> Balance available to allocate: <span>$94,030.17</span></span>
+                            </div>
+                        </div>
+
+                        <div className="box-do">
+                            <div className="content-do">
+                                <div className="do">
+                                    <img src={check} alt="check" />
+                                    <span>Do</span>
+                                </div>
+                                <span className="do-span">$10,086.17 <span>$70,000.00 </span> $8,246.38 </span>
+                            </div>
+
+                            <div className="divider-vertical"></div>
+
+                            <div className="content-dont">
+                                <div className="dont">
+                                    <img src={close} alt="close" />
+                                    <span>Don’t</span>
+                                </div>
+                                <span className="do-span">$10,086.17 <span>$70,000.00 </span> $8,246.38 </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div className="dividier-line"></div>
+
+            <div className="capitalization">
+                <h3>Dates</h3>
+
+                <div className="content-capitalization">
+                    <div className="capitalization-left">
+                        <span>Date formats are situational. The following formats are acceptable for web and mobile:</span>
+
+                        <div className="phone-number">
+                            Month DD, YYYY
+                        </div>
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Write out the month.</span>
+                        </div>
+                        <div>
+                            <img src={close_circle_x} alt="close_circle_x" />
+                            <span>Do not abbreviate the month.</span>
+                        </div>
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Separate the day and year using a comma.</span>
+                        </div>
+
+                        <div className="phone-number">
+                            MM/DD/YYYY
+                        </div>
+
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Use two digits to indicate the month and day.</span>
+                        </div>
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Use four digits to indicate the year.</span>
+                        </div>
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Separate the month, day and year using a slash (/).</span>
+                        </div>
+                        <div>
+                            <img src={close_circle_x} alt="close_circle_x" />
+                            <span>Do not use a dash (-) to separate month, day and/or year.</span>
+                        </div>
+
+
+                        <h4>Date ranges</h4>
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Use an en dash (–) to show a date range. Include the year when the range is outside of the current year.</span>
+                        </div>
+
+                    </div>
+
+
+                    <div className="capitalization-right-2">
+                        <h4>Example</h4>
+
+                        <div className="box-do">
+                            <div className="content-do">
+                                <div className="do">
+                                    <img src={check} alt="check" />
+                                    <span>Do</span>
+                                </div>
+                                <span className="do-span">August 10, 2024</span>
+                            </div>
+
+                            <div className="divider-vertical"></div>
+
+                            <div className="content-dont">
+                                <div className="dont">
+                                    <img src={close} alt="close" />
+                                    <span>Don’t</span>
+                                </div>
+                                <span className="do-span">10 August 2024 Aug. 10, 2024 2024 August 10</span>
+                            </div>
+                        </div>
+
+                        <div className="box-do">
+                            <div className="content-do">
+                                <div className="do">
+                                    <img src={check} alt="check" />
+                                    <span>Do</span>
+                                </div>
+                                <span className="do-span">08/10/2024</span>
+                            </div>
+
+                            <div className="divider-vertical"></div>
+
+                            <div className="content-dont">
+                                <div className="dont">
+                                    <img src={close} alt="close" />
+                                    <span>Don’t</span>
+                                </div>
+                                <span className="do-span">10/08/24 10/8/248-10-20240</span>
+                            </div>
+                        </div>
+
+                        <div className="box-do">
+                            <div className="content-do">
+                                <div className="do">
+                                    <img src={check} alt="check" />
+                                    <span>Do</span>
+                                </div>
+                                <span className="do-span">June 15 – 23 June 15 – August 1</span>
+                                <span className="do-span">06/15 – 23 06/15 – 08/01</span>
+                                <span className="do-span">06/15/2023 – 06/15/2024</span>
+                            </div>
+
+                            <div className="divider-vertical"></div>
+
+                            <div className="content-dont">
+                                <div className="dont">
+                                    <img src={close} alt="close" />
+                                    <span>Don’t</span>
+                                </div>
+                                <span className="do-span">June 15 to June 23 June 15 to Aug. 1</span>
+                                <span className="do-span">6-15 to 6-23  6-15 to 8-1 </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div className="dividier-line"></div>
+
+
+            <div className="capitalization">
+                <h3>Phone numbers</h3>
+
+                <div className="content-capitalization">
+                    <div className="capitalization-left">
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Use the 12h format..</span>
+                        </div>
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Lowercase both a.m. and p.m., use periods after each letter, with a space between the numeral and a.m./p.m.</span>
+                        </div>
+                        <div>
+                            <img src={close_circle_x} alt="close_circle_x" />
+                            <span>Do not use zeros following the hours.</span>
+                        </div>
+
+
+                        <h4>Time zones</h4>
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Add the time zone (all caps, no periods) in parentheses after a.m. or p.m.</span>
+                        </div>
+                        <div>
+                            <img src={check_circle} alt="check_circle" />
+                            <span>Use the time zone acronym. The four time zones used most frequently are Eastern Time (ET), Central Time (CT), Mountain Time (MT) and Pacific Time (PT). Use after the time of day.</span>
+                        </div>
+
+                    </div>
+
+
+                    <div className="capitalization-right-2">
+                        <h4>Example</h4>
+
+                        <div className="box-do">
+                            <div className="content-do">
+                                <div className="do">
+                                    <img src={check} alt="check" />
+                                    <span>Do</span>
+                                </div>
+                                <span className="do-span">6 a.m. (ET)</span>
+                            </div>
+
+                            <div className="divider-vertical"></div>
+
+                            <div className="content-dont">
+                                <div className="dont">
+                                    <img src={close} alt="close" />
+                                    <span>Don’t</span>
+                                </div>
+                                <span className="do-span">6am 6:00 A.m. (Eastern) 06:00 AM (et)</span>
+                            </div>
+                        </div>
+
+                        <div className="box-do">
+                            <div className="content-do">
+                                <div className="do">
+                                    <img src={check} alt="check" />
+                                    <span>Do</span>
+                                </div>
+                                <span className="do-span">08/10/2024</span>
+                            </div>
+
+                            <div className="divider-vertical"></div>
+
+                            <div className="content-dont">
+                                <div className="dont">
+                                    <img src={close} alt="close" />
+                                    <span>Don’t</span>
+                                </div>
+                                <span className="do-span">10/08/2024 10/8/24 8-10-202</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div className="content-styling">
+            <div className="content-dividier">
+                <div className="dividier"></div>
+                <div className="dividier-two"></div>
+            </div>
+
+
+
+            <div className="capitalization">
+                <div className="styling">
+                    <h1>Active & passive voice</h1>
+                </div>
+                <div className="content-capitalization">
+                    <div className="capitalization-left">
+                        <div>
+                            <span>Active voice makes it clear who is performing what action. In almost all cases, active voice is preferred.</span>
+                        </div>
+                        <div>
+                            <span>However, passive voice can provide a softer tone in certain situations.</span>
+                        </div>
+
+                    </div>
+
+                    <div className="capitalization-right-2">
+                        <h4>Example</h4>
+                        <div className="box-do">
+                            <div className="content-do">
+                                <div className="do">
+                                    <img src={check} alt="check" />
+                                    <span>Do</span>
+                                </div>
+                                <span className="do-span">We’ll transfer your funds out of the managed model.</span>
+                            </div>
+
+                            <div className="divider-vertical"></div>
+
+                            <div className="content-dont">
+                                <div className="dont">
+                                    <img src={close} alt="close" />
+                                    <span>Don’t</span>
+                                </div>
+                                <span className="do-span">Your funds will be transferred out of the managed model.</span>
+                            </div>
+                        </div>
+                        <div className="box-do">
+                            <div className="content-do">
+                                <div className="do">
+                                    <img src={check} alt="check" />
+                                    <span>Do</span>
+                                </div>
+                                <span className="do-span">Your loan request was declined.</span>
+                            </div>
+
+                            <div className="divider-vertical"></div>
+
+                            <div className="content-dont">
+                                <div className="dont">
+                                    <img src={close} alt="close" />
+                                    <span>Don’t</span>
+                                </div>
+                                <span className="do-span">We declined your loan request.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div>
+        <ul className="navigator">
+            <span>On this page</span>
+            <li>Plain language</li>
+            <span>Text styling</span>
+            <span>Number formatting</span>
+            <span>Grammar</span>
+            <span>Capitalization</span>
+            <span>Prepositions</span>
+            <span>Contractions</span>
+            <span>Pronouns</span>
+            <span>List</span>
+        </ul>
+    </div>
+</div>
+
+
+<style>{`
+.header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: #F5F5F0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.title {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 115%;
+    letter-spacing: 1px;
+    color: #041459;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 64px;
+}
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.box img {
+    width: 100%;
+    height: 100%;
+}
+.content{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin-top: 53px;
+    gap: 25px;
+}
+.general-content{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.navigator {
+    display: grid;
+    padding-left: 60px;
+    border-radius: 8px;
+    border: 1px solid #CCC;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 0;
+    width: max-content;
+    span, li{
+      color: #041459;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%
+    }
+    li {
+      color: #305AF3;
+    }
+    span:first-child{
+      color: #8B8B8B;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 130%;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+}
+.sub-title {
+  h1{
+    color: #041459;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 1px;
+  }
+  p{
+    font-size: 16px;
+    ont-style: normal;
+    ont-weight: 400;
+    ine-height: 130%;
+  }
+}
+.content-dividier {
+    display: flex;
+  .dividier{
+    border: 1px solid #CCC;
+    width: 36px;
+    height: 8px;
+    background-color: #00A38D;
+  }
+  .dividier-two {
+    border: 1px solid #CCC;
+    width: 18px;
+    height: 8px;
+    background-color: #8AD5CB;
+  }
+}
+.content-styling{
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+.styling {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #041459;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  h1{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 1px;
+  }
+  h3{
+    color: #041459;
+    font-size: 24px;
+  }
+  div{
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+    padding-left: 12px;
+  }
+}
+.dividier-line {
+    height: 1px;
+    align-self: stretch;
+    background: #CCC;
+}
+.capitalization{
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    color: #041459;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    h3{
+      font-size: 24px;
+    }
+}
+.content-capitalization{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+.capitalization-left  {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    div {
+      display: flex;
+      gap: 8px;
+      font-size: 16px;
+      padding-right: 12px;
+      img{
+        padding-left: 12px;
+        display: grid;
+        align-self: start;
+      }
+    }
+  }
+}
+.capitalization-right {
+    display: flex;
+  h4{
+    color: #041459;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+}
+.box-do {
+    background-color: #f5f5f0;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    text-align: left;
+    align-items: baseline;
+}
+.content-do,
+.content-dont {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 16px;
+}
+.do,
+.dont {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 1000px;
+}
+.do {
+    background-color: #247c09;
+    width: 54px;
+}
+.do span {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+.dont {
+    background-color: #cc1d33;
+    width: 67px;
+}
+.divider-vertical {
+    border-left: 1px solid #CCC;
+    height: 100%;;
+}
+.do-span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    padding-bottom: 8px;
+    span{
+      font-weight: 900;
+    }
+}
+.phone-number{
+    display: flex;
+    padding: 12px 18px;
+    align-items: center;
+    gap: 12px;
+    flex: 1 0 0;
+    background-color: #EAF1FE;
+    height: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    color: #041459;
+}
+.capitalization-right-2{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+`}</style>
